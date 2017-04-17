@@ -9,18 +9,18 @@
   <body>
     <br>
     <div class="posts-wrapper row">
-      <%= @posts.each do |post| %>
       <div class="post">
         <div class="post-head">
           <div class="name">Ben Walker</div>
         </div>
         <div class="image center-block">
-          <%= link_to (image_tag post.image.url(:medium), class:'img-responsive'), post_path(post) %>
-          
+          <%= image_tag @post.image.url(:medium) %>
         </div>
-        <p class="caption"><%= post.caption %></p>
+        <p class="caption"><%= @post.caption %></p>
+        <div class="text-center">
+          <%= link_to "Cancel", posts_path %>
+        </div>
       </div>
-      <% end %>
     </div>
   </body>
 </html>
