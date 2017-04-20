@@ -34,9 +34,17 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+#paperclip gem for image uploading
 gem 'paperclip', git: "git://github.com/thoughtbot/paperclip.git"
+
+#Simple form gem for sign up form
 gem 'simple_form'
+
+#bootstrap gem
 gem 'bootstrap-sass', '~> 3.3.6'
+
+#Devise for authentication
 gem 'devise'
 
 group :development, :test do
